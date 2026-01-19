@@ -22,29 +22,29 @@ function M.setup(c)
       ["@comment.note.comment"]         = { link = "BlueBold"     },
     },
     ["folke/lazy.nvim"] = {
-      LazyButtonActive                  = { link = "BtnOrangeSolid"   },
+      LazyButtonActive                  = { link = "BtnPurple"        },
       LazyH1                            = { link = "LazyButtonActive" },
     },
     ["williamboman/mason.nvim"] = {
-      MasonHeader                       = { link = "BtnOrangeSolid"           },
-      MasonHighlightBlockBold           = { link = "BtnBlue"                  },
+      MasonHeader                       = { link = "BtnGreyPurple"            },
+      MasonHighlightBlockBold           = { link = "BtnPurple"                },
       MasonHeaderSecondary              = { link = "MasonHighlightBlockBold"  },
       MasonHighlight                    = { link = "Directory"                },
       MasonMutedBlock                   = { link = "BtnMutedSolid"            },
-      MasonHighlightSecondary           = { link = "BtnOrangeSolid"           },
-      MasonHighlightBlockBoldSecondary  = { link = "BtnOrangeSolid"           },
+      MasonHighlightSecondary           = { link = "BtnGreyPurple"            },
+      MasonHighlightBlockBoldSecondary  = { link = "BtnGreyPurple"            },
     },
     ["ibhagwan/fzf-lua"] = {
-      FzfLuaBorder                      = { fg = c.dark_grey.hex,  bold = true },
-      FzfLuaTitle                       = { fg = c.orange.hex,     bold = true },
-      FzfLuaFzfBorder                   = { link = "FzfLuaBorder"                   },
+      FzfLuaBorder                      = { fg = c.dark_grey.hex,  bold = true  },
+      FzfLuaTitle                       = { fg = c.orange.hex,     bold = true  },
+      FzfLuaFzfBorder                   = { link = "FzfLuaBorder"               },
     },
     ["nvim-mini/mini.icons"] = {
       MiniIconsAzure                    = { link = "Purple" },
       MiniIconsGrey                     = { link = "LightPurple" },
     },
     ["echasnovski/mini.clue"] = {
-      MiniClueTitle                     = { link = "BtnBlueSolid" },
+      MiniClueTitle                     = { link = "BtnPurpleSolid" },
       MiniClueSeparator                 = { link = "RetroboxDimmer" },
     },
     ["nvim-neotest/neotest"] = {

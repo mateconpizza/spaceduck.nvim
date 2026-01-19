@@ -1,7 +1,7 @@
 -- spaceduck dark palette
 
 local function hi()
-  return require('highlighter')
+  return require("highlighter")
 end
 
 local M = {}
@@ -35,7 +35,7 @@ function M.setup(c)
         bg = c.grey.hex,
         ctermbg = c.grey.cterm,
       },
-      CursorIM = { link = 'Cursor' },
+      CursorIM = { link = "Cursor" },
       CursorLine = {
         bg = c.dark_blue.hex,
         ctermfg = c.dark_blue.cterm,
@@ -56,7 +56,7 @@ function M.setup(c)
         bg = c.blackish.hex,
         ctermbg = c.blackish.cterm,
       },
-      TermCursor = { link = 'Cursor' },
+      TermCursor = { link = "Cursor" },
       ErrorMsg = {
         fg = c.red.hex,
         ctermfg = c.red.cterm,
@@ -106,7 +106,7 @@ function M.setup(c)
       },
       ModeMsg = { fg = c.light_purple.hex, ctermfg = c.light_purple.cterm },
       MoreMsg = { fg = c.light_purple.hex, ctermfg = c.light_purple.cterm },
-      NonText = { link = 'EndOfBuffer' },
+      NonText = { link = "EndOfBuffer" },
       Question = { fg = c.light_purple.hex, ctermfg = c.light_purple.cterm },
       QuickFixLine = {
         fg = c.cream.hex,
@@ -126,8 +126,8 @@ function M.setup(c)
         bg = c.blackish.hex,
         ctermbg = c.blackish.cterm,
       },
-      Whitespace = { link = 'EndOfBuffer' },
-      WinSeparator = { link = 'VertSplit' },
+      Whitespace = { link = "EndOfBuffer" },
+      WinSeparator = { link = "VertSplit" },
     },
 
     menu = {
@@ -161,7 +161,7 @@ function M.setup(c)
         ctermbg = c.blackish.cterm,
         reverse = true,
       },
-      StatusLineTerm = { link = 'StatusLine' },
+      StatusLineTerm = { link = "StatusLine" },
       StatusLineTermNC = {
         fg = c.black.hex,
         ctermfg = c.black.cterm,
@@ -169,7 +169,7 @@ function M.setup(c)
         ctermbg = c.dark_purple.cterm,
         reverse = true,
       },
-      StatusLineNC = { link = 'StatusLineTermNC' },
+      StatusLineNC = { link = "StatusLineTermNC" },
       SpellBad = { fg = c.red.hex, ctermfg = c.red.cterm, underline = true },
       SpellLocal = { fg = c.cream.hex, ctermfg = c.cream.cterm, underline = true },
       SpellCap = { fg = c.green.hex, ctermfg = c.green.cterm, underline = true },
@@ -205,7 +205,7 @@ function M.setup(c)
 
     visual = {
       Visual = { bg = c.dark_grey.hex, ctermbg = c.dark_grey.cterm },
-      VisualNOS = { link = 'Visual' },
+      VisualNOS = { link = "Visual" },
     },
 
     diff = {
@@ -273,7 +273,7 @@ function M.setup(c)
       Define = { fg = c.purple.hex, ctermfg = c.purple.cterm },
       Macro = { fg = c.purple.hex, ctermfg = c.purple.cterm },
       PreCondit = { fg = c.purple.hex, ctermfg = c.purple.cterm },
-      SpecialComment = { link = 'Comment' },
+      SpecialComment = { link = "Comment" },
       Todo = {
         fg = c.white.hex,
         ctermfg = c.white.cterm,
