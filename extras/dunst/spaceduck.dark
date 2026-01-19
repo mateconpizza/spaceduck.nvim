@@ -1,0 +1,18 @@
+[urgency_low]
+    background  = "#16172d"   # dark_blue
+    foreground  = "#ecf0c1"   # cream
+    frame_color = "#16172d"   # dark_purple
+    timeout     = 5
+
+[urgency_normal]
+    background  = "#16172d"   # dark_blue
+    foreground  = "#ecf0c1"   # cream
+    frame_color = "#16172d"   # dark_purple
+    highlight   = "#7a5ccc"   # purple
+    timeout     = 5
+
+[urgency_critical]
+    background  = "#e33400"   # red
+    foreground  = "#000000"   # black
+    frame_color = "#e33400"   # red
+    timeout     = 0

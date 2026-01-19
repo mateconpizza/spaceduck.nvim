@@ -13,6 +13,9 @@
   <img  src="https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/screenshot.png?raw=true" alt="Screenshot of terminal with vim spaceduck theme installed">
 </center>
 
+> [!NOTE]
+> Forked from [spaceduck-theme](https://github.com/spaceduck-theme/nvim), this version expands on the original with a `light` theme (WIP) and extra configurations for my personal toolkit.
+
 This is Nvim spaceduck theme port written in Lua.
 
 # Inspiration 💭
@@ -58,6 +61,25 @@ require("lualine").setup({
   },
 })
 ```
+
+# Extras
+
+<details>
+<summary>Tools</summary>
+
+| Tool                                                       | Extra                                    |
+| ---------------------------------------------------------- | ---------------------------------------- |
+| [base16](https://github.com/tinted-theming/home)           | [extras/base16](./extras/base16)         |
+| [bat](https://github.com/sharkdp/bat)                      | [extras/bat](./extras/bat)               |
+| [delta](https://github.com/dandavison/delta)               | [extras/delta](./extras/delta)           |
+| [dunst](https://dunst-project.org/documentation)           | [extras/dunst](./extras/dunst)           |
+| [fzf](https://github.com/junegunn/fzf)                     | [extras/fzf](./extras/fzf)               |
+| [newsboat](https://newsboat.org/)                          | [extras/newsboat](./extras/newsboat)     |
+| [rofi](https://github.com/davatorium/rofi)                 | [extras/rofi](./extras/rofi)             |
+| [xresources](https://wiki.archlinux.org/title/X_resources) | [extras/xresources](./extras/xresources) |
+| [zathura](https://pwmt.org/projects/zathura/)              | [extras/zathura](./extras/zathura)       |
+
+</details>
 
 # Contributing
 

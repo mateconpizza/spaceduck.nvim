@@ -1,0 +1,18 @@
+[urgency_low]
+    background  = "#e6e9ef"   # dark_blue → light panel background
+    foreground  = "#4c4f69"   # cream → main text
+    frame_color = "#c6cfed"   # dark_purple → soft lavender frame
+    timeout     = 5
+
+[urgency_normal]
+    background  = "#e6e9ef"   # dark_blue → light panel background
+    foreground  = "#4c4f69"   # cream → main text
+    frame_color = "#c6cfed"   # dark_purple → soft lavender frame
+    highlight   = "#8839ef"   # purple
+    timeout     = 5
+
+[urgency_critical]
+    background  = "#d20f39"   # red (light palette)
+    foreground  = "#ffffff"   # pure white for maximum contrast
+    frame_color = "#d20f39"   # red
+    timeout     = 0

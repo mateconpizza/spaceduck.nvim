@@ -1,0 +1,28 @@
+# Newsboat colour scheme for Spaceduck Dark theme
+
+# color   <element>       <foreground>  <background> <attribute>
+color   background          color15      default
+color   listnormal          color15      default        dim
+color   listnormal_unread   color6       default
+color   listfocus           color15      color8         dim
+color   listfocus_unread    default      color8         dim
+color   info                color8       default
+color   article             color15      default
+
+color   title               color15      default        bold
+color   hint-key            color6       default        bold
+color   hint-keys-delimiter color8       default
+color   hint-separator      color8       default        bold
+color   hint-description    color8       default        dim
+color   end-of-text-marker  color8       default
+
+# subheadings
+highlight feedlist "╼.*"    color11      default        bold
+
+# highlights
+highlight article "^(Feed|Link):.*$" color11 default bold
+highlight article "^(Title|Date|Author):.*$" color11 default bold
+highlight article "https?://[^ ]+" color2 default underline
+highlight article "\\[[0-9]+\\]" color2 default bold
+highlight article "\\[image\\ [0-9]+\\]" color2 default bold
+highlight feedlist "^─.*$" color6 color6 bold

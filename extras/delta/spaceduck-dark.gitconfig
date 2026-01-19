@@ -1,0 +1,42 @@
+[delta "spaceduck-dark"]
+	# Background gradient for blame / panels
+	blame-palette = "#0f111b #16172d #1b1c36 #30365F #686f9a"
+
+	commit-decoration-style = box ul
+	light = false
+
+	file-decoration-style = "#c1c3cc"
+	file-style = "#c1c3cc"
+
+	hunk-header-decoration-style = box ul
+	hunk-header-file-style = bold
+	hunk-header-line-number-style = bold "#818596"
+	hunk-header-style = file line-number syntax
+
+	line-numbers-left-style = "#818596"
+	line-numbers-right-style = "#818596"
+	line-numbers-zero-style = "#818596"
+
+	line-numbers-minus-style = bold "#e33400"
+	line-numbers-plus-style  = bold "#5ccc96"
+
+	# 25% red + base (critical emphasis)
+	minus-emph-style = bold syntax "#b85a4a"
+	# 10% red + base
+	minus-style = syntax "#3a1e1e"
+
+	# 25% green + base
+	plus-emph-style = bold syntax "#5fae8a"
+	# 10% green + base
+	plus-style = syntax "#1f3a2e"
+
+	map-styles = \
+		bold purple => syntax "#b3a1e6", \
+		bold blue   => syntax "#00a3cc", \
+		bold cyan   => syntax "#00a3cc", \
+		bold yellow => syntax "#f2ce00"
+
+	# Should match the name of the bat theme
+	syntax-theme = spaceduck-dark
+
+# vim:ft=gitconfig

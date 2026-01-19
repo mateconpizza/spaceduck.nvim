@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# spaceduck-light
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS
+  --color=fg:#4c4f69,hl:#ea76cb
+  --color=fg+:#40a02b,bg+:#bcc0cc,hl+:#8839ef
+  --color=info:#df8e1d,prompt:#7287fd,pointer:#fe640b
+  --color=marker:#04a5e5,spinner:#d20f39,header:#8c8fa1"

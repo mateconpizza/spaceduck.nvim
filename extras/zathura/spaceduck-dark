@@ -1,0 +1,50 @@
+# === Core ===
+set default-bg                "#0f111b"   # blackish
+set default-fg                "#c1c3cc"   # greyer
+
+# === Completion ===
+set completion-bg             "#1b1c36"   # dark_grey
+set completion-fg             "#c1c3cc"   # greyer
+set completion-highlight-bg   "#30365F"   # dark_purple
+set completion-highlight-fg   "#ecf0c1"   # cream
+set completion-group-bg       "#1b1c36"   # dark_grey
+set completion-group-fg       "#7a5ccc"   # purple
+
+# === Statusbar ===
+set statusbar-bg              "#1b1c36"   # dark_grey
+set statusbar-fg              "#c1c3cc"   # greyer
+
+# === Notifications ===
+set notification-bg           "#1b1c36"   # dark_grey
+set notification-fg           "#c1c3cc"   # greyer
+
+set notification-error-bg     "#1b1c36"   # dark_grey
+set notification-error-fg     "#e33400"   # red
+
+set notification-warning-bg   "#1b1c36"   # dark_grey
+set notification-warning-fg   "#f2ce00"   # yellow
+
+# === Inputbar ===
+set inputbar-bg               "#1b1c36"   # dark_grey
+set inputbar-fg               "#c1c3cc"   # greyer
+
+# === Recolor (PDF dark mode) ===
+set recolor-lightcolor        "#0f111b"   # blackish
+set recolor-darkcolor         "#ecf0c1"   # cream
+
+# === Index / TOC ===
+set index-bg                  "#0f111b"   # blackish
+set index-fg                  "#c1c3cc"   # greyer
+set index-active-bg           "#1b1c36"   # dark_grey
+set index-active-fg           "#ecf0c1"   # cream
+
+# === Rendering ===
+set render-loading-bg         "#0f111b"   # blackish
+set render-loading-fg         "#c1c3cc"   # greyer
+
+# === Highlighting ===
+set highlight-color           "#30365F"   # dark_purple
+set highlight-fg              "#ce6f8f"   # magenta
+set highlight-active-color    "#b3a1e6"   # light_purple
+
+# vim: ft=zathurarc

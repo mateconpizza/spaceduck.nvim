@@ -1,0 +1,104 @@
+! -----------------------------------------------------------------------------
+! File: spaceduck-light.xresources
+! Description: An intergalactic space theme for Vim, Terminal, and more!
+! Variant: Light
+! -----------------------------------------------------------------------------
+
+! =========================
+! Base colors
+! =========================
+! blackish (Cool White)
+#define BACKGROUND #eff1f5
+! cream (Dark Blue-Grey)
+#define FOREGROUND #4c4f69
+
+! =========================
+! Black + DarkGrey
+! =========================
+! Mapped to greys for visibility
+#define COLOR0  #bcc0cc
+#define COLOR8  #8c8fa1
+
+! =========================
+! Red
+! =========================
+#define COLOR1  #d20f39
+#define COLOR9  #d20f39
+
+! =========================
+! Green
+! =========================
+#define COLOR2  #40a02b
+#define COLOR10 #40a02b
+
+! =========================
+! Yellow (Orange in palette)
+! =========================
+#define COLOR3  #df8e1d
+#define COLOR11 #df8e1d
+
+! =========================
+! Blue (Light Purple in palette)
+! =========================
+#define COLOR4  #7287fd
+#define COLOR12 #7287fd
+
+! =========================
+! Magenta (Purple in palette)
+! =========================
+#define COLOR5  #8839ef
+#define COLOR13 #ea76cb
+
+! =========================
+! Cyan
+! =========================
+#define COLOR6  #04a5e5
+#define COLOR14 #04a5e5
+
+! =========================
+! White
+! =========================
+! Mapped to text colors (Dark)
+#define COLOR7  #4c4f69
+#define COLOR15 #202124
+
+! =========================
+! Global assignments
+! =========================
+*.foreground:   FOREGROUND
+*.background:   BACKGROUND
+*.cursorColor:  FOREGROUND
+
+! black
+*.color0:       COLOR0
+*.color8:       COLOR8
+
+! red
+*.color1:       COLOR1
+*.color9:       COLOR9
+
+! green
+*.color2:       COLOR2
+*.color10:      COLOR10
+
+! yellow
+*.color3:       COLOR3
+*.color11:      COLOR11
+
+! blue
+*.color4:       COLOR4
+*.color12:      COLOR12
+
+! magenta
+*.color5:       COLOR5
+*.color13:      COLOR13
+
+! cyan
+*.color6:       COLOR6
+*.color14:      COLOR14
+
+! white
+*.color7:       COLOR7
+*.color15:      COLOR15
+
+! vim: ft=xdefaults sw=2 ts=2 sts=2 et tw=80

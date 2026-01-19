@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# spaceduck-dark
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
+  --highlight-line \
+  --info=inline-right \
+  --ansi \
+  --layout=reverse \
+  --border=none \
+  --color=bg:#0f111b \
+  --color=bg+:#1b1c36 \
+  --color=border:#16172d \
+  --color=fg:#ecf0c1 \
+  --color=gutter:#0f111b \
+  --color=header:#f2ce00 \
+  --color=hl:#00a3cc \
+  --color=hl+:#00a3cc \
+  --color=info:#686f9a \
+  --color=marker:#e33400 \
+  --color=pointer:#e33400 \
+  --color=prompt:#7a5ccc \
+  --color=query:#ecf0c1:regular \
+  --color=scrollbar:#686f9a \
+  --color=separator:#b3a1e6 \
+  --color=spinner:#5ccc96 \
+"
