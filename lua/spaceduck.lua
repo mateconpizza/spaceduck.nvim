@@ -6,36 +6,42 @@
 -- License: MIT
 -- ===============================================================
 
+local M = {}
+
 local function higroups()
-  return require('higroups')
+  return require("higroups")
 end
 
 local function hi()
-  return require('highlighter')
+  return require("highlighter")
 end
 
-local is_dark = vim.o.background == 'dark'
-local spaceduck = require('palette')
-vim.g.colors_name = spaceduck.name
-
-local theme = require('palette').light
-if is_dark then
-  theme = spaceduck.dark
+local function utils()
+  return require("utils")
 end
 
----@type spaceduck.palette
-local c = theme.palette
+function M.load()
+  vim.cmd("hi clear")
+  if vim.fn.exists("syntax_on") == 1 then
+    vim.cmd("syntax reset")
+  end
 
-vim.api.nvim_command('hi clear')
-if vim.g.syntax_on then
-  vim.api.nvim_command('syntax reset')
-end
+  local is_dark = vim.o.background == "dark"
+  local spaceduck = require("palette")
+  vim.g.colors_name = spaceduck.name
 
-local groups = (is_dark and higroups().dark(c) or higroups().light(c))
+  ---@type spaceduck.palette
+  local palette = is_dark and spaceduck.dark.palette or spaceduck.light.palette
 
-groups = vim.tbl_extend('force', higroups().common(c), higroups().plugins(c), groups)
-for _, group in pairs(groups) do
-  for name, spec in pairs(group) do
-    hi().set[name] = spec
+  local base = is_dark and higroups().dark(palette) or higroups().light(palette)
+  local groups = utils().merge_groups(higroups().common(palette), higroups().plugins(palette), base)
+
+  -- apply
+  for _, group in pairs(groups) do
+    for name, spec in pairs(group) do
+      hi().set[name] = spec
+    end
   end
 end
+
+return M

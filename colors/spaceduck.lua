@@ -1,1 +1,1 @@
-require("spaceduck")
+require("spaceduck").load()
