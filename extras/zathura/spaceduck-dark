@@ -43,8 +43,12 @@ set render-loading-bg         "#0f111b"   # blackish
 set render-loading-fg         "#c1c3cc"   # greyer
 
 # === Highlighting ===
-set highlight-color           "#30365F"   # dark_purple
+set highlight-color           rgba(48,54,95,0.5) # dark_purple
+set highlight-active-color    rgba(179,161,230,0.5) # light_purple
 set highlight-fg              "#ce6f8f"   # magenta
-set highlight-active-color    "#b3a1e6"   # light_purple
+
+# === Startup options ===
+set adjust-open width
+set recolor true
 
 # vim: ft=zathurarc
