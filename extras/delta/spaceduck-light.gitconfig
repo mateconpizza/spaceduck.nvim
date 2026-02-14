@@ -1,41 +1,32 @@
 [delta "spaceduck-light"]
-	# Background gradient for blame / panels (lightened)
-	blame-palette = "#eff1f5 #e6e9ef #dce0e8 #ccd0da #bcc0cc"
-
+	# Background gradient for blame / panels
+	blame-palette = "#ecf0c1 #e8e9d8 #dfe0c9 #c1c3cc #818596"
 	commit-decoration-style = box ul
 	light = true
-
-	file-decoration-style = "#4c4f69"
-	file-style = "#4c4f69"
-
+	file-decoration-style = "#30365f"
+	file-style = "#30365f"
 	hunk-header-decoration-style = box ul
 	hunk-header-file-style = bold
-	hunk-header-line-number-style = bold "#9ca0b0"
+	hunk-header-line-number-style = bold "#686f9a"
 	hunk-header-style = file line-number syntax
-
-	line-numbers-left-style  = "#9ca0b0"
-	line-numbers-right-style = "#9ca0b0"
-	line-numbers-zero-style  = "#9ca0b0"
-
-	line-numbers-minus-style = bold "#d20f39"
-	line-numbers-plus-style  = bold "#40a02b"
-
-	# 25% red + base (critical emphasis)
-	minus-emph-style = bold syntax "#e08a8a"
-	# 10% red + base
-	minus-style = syntax "#f2d5d5"
-
-	# 25% green + base
-	plus-emph-style = bold syntax "#7ecf9a"
-	# 10% green + base
-	plus-style = syntax "#d5f0e2"
-
+	line-numbers-left-style = "#686f9a"
+	line-numbers-right-style = "#686f9a"
+	line-numbers-zero-style = "#686f9a"
+	line-numbers-minus-style = bold "#c72d00"
+	line-numbers-plus-style  = bold "#00a370"
+	# 25% red + light base (critical emphasis)
+	minus-emph-style = bold syntax "#f5d5ca"
+	# 10% red + light base
+	minus-style = syntax "#f8ece8"
+	# 25% green + light base
+	plus-emph-style = bold syntax "#d4f0e3"
+	# 10% green + light base
+	plus-style = syntax "#ebf7f1"
 	map-styles = \
-		bold purple => syntax "#8839ef", \
-		bold blue   => syntax "#04a5e5", \
-		bold cyan   => syntax "#04a5e5", \
-		bold yellow => syntax "#df8e1d"
-
+		bold purple => syntax "#8e7dc6", \
+		bold blue   => syntax "#0088aa", \
+		bold cyan   => syntax "#0088aa", \
+		bold yellow => syntax "#c9a800"
 	# Should match the name of the bat theme
 	syntax-theme = spaceduck-light
 

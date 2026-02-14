@@ -1,8 +1,26 @@
 #!/bin/sh
-
 # spaceduck-light
-export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS
-  --color=fg:#4c4f69,hl:#ea76cb
-  --color=fg+:#40a02b,bg+:#bcc0cc,hl+:#8839ef
-  --color=info:#df8e1d,prompt:#7287fd,pointer:#fe640b
-  --color=marker:#04a5e5,spinner:#d20f39,header:#8c8fa1"
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
+  --highlight-line \
+  --info=inline-right \
+  --ansi \
+  --layout=reverse \
+  --border=none \
+  --color=bg:#f0f1ce \
+  --color=bg+:#dfe0c9 \
+  --color=border:#dfe0c9 \
+  --color=fg:#0f111b \
+  --color=fg+:#0f111b \
+  --color=gutter:#f0f1ce \
+  --color=header:#c9a800 \
+  --color=hl:#0f111b:#00a370 \
+  --color=hl+:#0f111b:#008c5e \
+  --color=info:#686f9a \
+  --color=marker:#c72d00 \
+  --color=pointer:#6347aa \
+  --color=prompt:#6347aa \
+  --color=query:#0f111b:regular \
+  --color=scrollbar:#686f9a \
+  --color=separator:#8e7dc6 \
+  --color=spinner:#00a370 \
+"

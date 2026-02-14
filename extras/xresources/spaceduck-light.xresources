@@ -1,72 +1,68 @@
 ! -----------------------------------------------------------------------------
 ! File: spaceduck-light.xresources
 ! Description: An intergalactic space theme for Vim, Terminal, and more!
-! Variant: Light
+! Based: https://github.com/spaceduck-theme/
 ! -----------------------------------------------------------------------------
 
 ! =========================
 ! Base colors
 ! =========================
-! blackish (Cool White)
-#define BACKGROUND #eff1f5
-! cream (Dark Blue-Grey)
-#define FOREGROUND #4c4f69
+#define BACKGROUND #f0f1ce
+#define FOREGROUND #0f111b
 
 ! =========================
 ! Black + DarkGrey
 ! =========================
-! Mapped to greys for visibility
-#define COLOR0  #bcc0cc
-#define COLOR8  #8c8fa1
+#define COLOR0  #2b2e44
+#define COLOR8  #3e4055
 
 ! =========================
-! Red
+! DarkRed + Red
 ! =========================
-#define COLOR1  #d20f39
-#define COLOR9  #d20f39
+#define COLOR1  #e33400
+#define COLOR9  #c72d00
 
 ! =========================
-! Green
+! DarkGreen + Green
 ! =========================
-#define COLOR2  #40a02b
-#define COLOR10 #40a02b
+#define COLOR2  #00a370
+#define COLOR10 #008c5e
 
 ! =========================
-! Yellow (Orange in palette)
+! DarkYellow + Yellow
 ! =========================
-#define COLOR3  #df8e1d
-#define COLOR11 #df8e1d
+#define COLOR3  #8e7dc6
+#define COLOR11 #7a68b0
 
 ! =========================
-! Blue (Light Purple in palette)
+! DarkBlue + Blue
 ! =========================
-#define COLOR4  #7287fd
-#define COLOR12 #7287fd
+#define COLOR4  #0088aa
+#define COLOR12 #006f8c
 
 ! =========================
-! Magenta (Purple in palette)
+! DarkMagenta + Magenta
 ! =========================
-#define COLOR5  #8839ef
-#define COLOR13 #ea76cb
+#define COLOR5  #c9a800
+#define COLOR13 #a88b00
 
 ! =========================
-! Cyan
+! DarkCyan + Cyan
 ! =========================
-#define COLOR6  #04a5e5
-#define COLOR14 #04a5e5
+#define COLOR6  #6347aa
+#define COLOR14 #523a8e
 
 ! =========================
-! White
+! LightGrey + White
 ! =========================
-! Mapped to text colors (Dark)
-#define COLOR7  #4c4f69
-#define COLOR15 #202124
+#define COLOR7  #3e4055
+#define COLOR15 #ffffff
 
 ! =========================
 ! Global assignments
 ! =========================
-*.foreground:   FOREGROUND
 *.background:   BACKGROUND
+*.foreground:   FOREGROUND
 *.cursorColor:  FOREGROUND
 
 ! black

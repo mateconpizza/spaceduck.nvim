@@ -13,44 +13,43 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#4c4f69</string> <!-- primary text -->
+        <string>#30365f</string> <!-- dark_purple (was greyer) -->
         <key>background</key>
-        <string>#eff1f5</string> <!-- light background -->
+        <string>#f0f1ce</string> <!-- cream (was blackish) -->
         <key>caret</key>
-        <string>#1e1e2e</string>
+        <string>#0f111b</string> <!-- blackish (was cream) -->
         <key>invisibles</key>
-        <string>#9ca0b0</string>
+        <string>#818596</string> <!-- grey -->
         <key>gutterForeground</key>
-        <string>#6c6f85</string>
+        <string>#686f9a</string> <!-- grey_purple -->
         <key>gutterForegroundHighlight</key>
-        <string>#40a02b</string>
+        <string>#00a370</string> <!-- green (darkened) -->
         <key>lineHighlight</key>
-        <string>#e6e9ef</string>
+        <string>#e8e9d8</string> <!-- light variant of dark_blue -->
         <key>selection</key>
-        <string>#c6cfed</string>
+        <string>#dfe0c9</string> <!-- light grey (was dark_purple) -->
         <key>selectionBorder</key>
-        <string>#eff1f5</string>
+        <string>#c1c3cc</string>
         <key>activeGuide</key>
-        <string>#df8e1d</string>
+        <string>#c67d00</string> <!-- orange (darkened) -->
         <key>findHighlightForeground</key>
-        <string>#eff1f5</string>
+        <string>#0f111b</string>
         <key>findHighlight</key>
-        <string>#f9e2af</string>
+        <string>#c9a800</string> <!-- yellow (darkened) -->
         <key>bracketsForeground</key>
-        <string>#6c6f85</string>
+        <string>#686f9a</string>
         <key>bracketContentsForeground</key>
-        <string>#6c6f85</string>
+        <string>#686f9a</string>
       </dict>
     </dict>
 
     <!-- === Syntax === -->
-
     <dict>
       <key>name</key><string>Comment</string>
       <key>scope</key><string>comment</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#9ca0b0</string>
+        <key>foreground</key><string>#818596</string>
         <key>fontStyle</key><string>italic</string>
       </dict>
     </dict>
@@ -60,7 +59,7 @@
       <key>scope</key><string>string</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#40a02b</string>
+        <key>foreground</key><string>#00a370</string>
       </dict>
     </dict>
 
@@ -69,7 +68,7 @@
       <key>scope</key><string>string.regexp</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#df8e1d</string>
+        <key>foreground</key><string>#c67d00</string>
       </dict>
     </dict>
 
@@ -78,7 +77,7 @@
       <key>scope</key><string>constant.numeric</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#df8e1d</string>
+        <key>foreground</key><string>#c67d00</string>
       </dict>
     </dict>
 
@@ -87,7 +86,7 @@
       <key>scope</key><string>constant.language.boolean</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#df8e1d</string>
+        <key>foreground</key><string>#c67d00</string>
         <key>fontStyle</key><string>bold italic</string>
       </dict>
     </dict>
@@ -97,7 +96,7 @@
       <key>scope</key><string>constant.language</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#7287fd</string>
+        <key>foreground</key><string>#8e7dc6</string>
         <key>fontStyle</key><string>italic</string>
       </dict>
     </dict>
@@ -107,7 +106,7 @@
       <key>scope</key><string>keyword</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#d20f39</string>
+        <key>foreground</key><string>#c72d00</string>
         <key>fontStyle</key><string>italic</string>
       </dict>
     </dict>
@@ -117,7 +116,7 @@
       <key>scope</key><string>keyword.control.loop, keyword.control.conditional</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#8839ef</string>
+        <key>foreground</key><string>#6347aa</string>
         <key>fontStyle</key><string>bold</string>
       </dict>
     </dict>
@@ -127,7 +126,7 @@
       <key>scope</key><string>keyword.operator, punctuation.accessor</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#04a5e5</string>
+        <key>foreground</key><string>#0088aa</string>
         <key>fontStyle</key><string>bold</string>
       </dict>
     </dict>
@@ -137,7 +136,7 @@
       <key>scope</key><string>entity.name.function, variable.function</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#04a5e5</string>
+        <key>foreground</key><string>#0088aa</string>
         <key>fontStyle</key><string>italic</string>
       </dict>
     </dict>
@@ -147,7 +146,7 @@
       <key>scope</key><string>entity.name.class, support.type</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#6c6f85</string>
+        <key>foreground</key><string>#686f9a</string>
         <key>fontStyle</key><string>italic</string>
       </dict>
     </dict>
@@ -157,7 +156,7 @@
       <key>scope</key><string>variable</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#4c4f69</string>
+        <key>foreground</key><string>#30365f</string>
       </dict>
     </dict>
 
@@ -166,8 +165,8 @@
       <key>scope</key><string>invalid</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#ffffff</string>
-        <key>background</key><string>#d20f39</string>
+        <key>foreground</key><string>#f0f1ce</string>
+        <key>background</key><string>#c72d00</string>
       </dict>
     </dict>
 
@@ -176,7 +175,7 @@
       <key>scope</key><string>markup.inserted</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#40a02b</string>
+        <key>foreground</key><string>#00a370</string>
       </dict>
     </dict>
 
@@ -185,7 +184,7 @@
       <key>scope</key><string>markup.deleted</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#d20f39</string>
+        <key>foreground</key><string>#c72d00</string>
       </dict>
     </dict>
 
@@ -194,7 +193,7 @@
       <key>scope</key><string>markup.changed</string>
       <key>settings</key>
       <dict>
-        <key>foreground</key><string>#df8e1d</string>
+        <key>foreground</key><string>#c9a800</string>
       </dict>
     </dict>
 

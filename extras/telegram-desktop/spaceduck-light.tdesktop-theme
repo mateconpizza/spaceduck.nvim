@@ -1,41 +1,41 @@
-// Spaceduck Telegram Desktop Theme
+// Spaceduck Light Telegram Desktop Theme
 
-// Spaceduck Palette
+// Spaceduck Light Palette
 cream:        #ecf0c1;
 white:        #FFFFFF;
 
 black:        #000000;
 blackish:     #0f111b;
-dark_blue:    #16172d;
-dark_grey:    #1b1c36;
+dark_blue:    #e8e9d8;
+dark_grey:    #dfe0c9;
 
-greyer:       #c1c3cc;
+greyer:       #30365f;
 grey:         #818596;
-dark_purple:  #30365F;
+dark_purple:  #c1c3cc;
 grey_purple:  #686f9a;
 
-purple:       #7a5ccc;
-light_purple: #b3a1e6;
-cyan:         #00a3cc;
-green:        #5ccc96;
-orange:       #e39400;
+purple:       #6347aa;
+light_purple: #8e7dc6;
+cyan:         #0088aa;
+green:        #00a370;
+orange:       #c67d00;
 red:          #e33400;
-yellow:       #f2ce00;
-magenta:      #ce6f8f;
+yellow:       #c9a800;
+magenta:      #a8466b;
 
-overlay:      #0f111b80;
-overlay_hard: #0f111bc0;
+overlay:      #ecf0c180;
+overlay_hard: #ecf0c1c0;
 
 none: #00000000;
 
 windowActiveTextFg: orange; // fallback for active text like online status
-windowBg: blackish; // fallback for background
+windowBg: cream; // fallback for background
 windowBgActive: windowActiveTextFg; // fallback for filled active areas
 windowBgOver: dark_blue; // fallback for background with mouse over
 windowBgRipple: none; // fallback for ripple effect
-windowFg: cream; // fallback for text
-windowFgActive: cream; // fallback for text on active areas
-windowFgOver: cream; // fallback for text with mouse over
+windowFg: blackish; // fallback for text
+windowFgActive: blackish; // fallback for text on active areas
+windowFgOver: blackish; // fallback for text with mouse over
 windowBoldFg: windowFg; // fallback for bold text
 windowBoldFgOver: windowBoldFg; // fallback for bold text with mouse over
 windowShadowFg: none; // fallback for shadow
@@ -53,7 +53,7 @@ scrollBgOver: none; // default scroll bar background with mouse over the scroll 
 mainMenuBg: windowBg; // main menu background
 mainMenuCoverBg: dark_grey; // main menu top cover background
 mainMenuCoverFg: windowFg; // main menu top cover text
-mainMenuCloudFg: white; //
+mainMenuCloudFg: blackish; //
 mainMenuCloudBg: grey; //
 
 menuBg: windowBg; // default popup menu background
@@ -80,9 +80,9 @@ filterInputInactiveBg: dark_grey; // default rounded input field background (lik
 filterInputActiveBg: filterInputInactiveBg; // default rounded input field active background (like in chats list search field when field is focused)
 
 activeButtonBg: orange; // default active button background
-activeButtonBgOver: #f2a629; // default active button background with mouse over
+activeButtonBgOver: #d89200; // default active button background with mouse over
 activeButtonBgRipple: windowBgRipple; // default active button ripple effect
-activeButtonFg: blackish; // default active button text
+activeButtonFg: cream; // default active button text
 activeButtonFgOver: activeButtonFg; // default active button text with mouse over
 activeButtonSecondaryFg: grey_purple; // default active button additional text (selected messages counter in forward / delete buttons)
 activeButtonSecondaryFgOver: activeButtonSecondaryFg; // default active button additional text with mouse over
@@ -114,7 +114,7 @@ dialogsTextFgService: yellow; // chat list group sender name text (or media mess
 dialogsRippleBg: windowBgRipple; // chat list ripple effect (on mouse down)
 dialogsUnreadBg: red; // chat list unread badge background for not muted chat
 dialogsUnreadBgMuted: grey; // chat list unread badge background for muted chat
-dialogsUnreadFg: cream; // chat list unread badge text
+dialogsUnreadFg: white; // chat list unread badge text
 dialogsDraftFg: red; // chat list draft label
 dialogsSendingIconFg: grey; // chat list sending message icon (clock)
 dialogsSentIconFg: yellow; // chat list sent message tick / double tick icon
@@ -351,7 +351,7 @@ titleButtonCloseBgActiveOver: titleButtonCloseBgOver; // custom window title clo
 titleButtonCloseFgActiveOver: titleButtonCloseFgOver; // custom window title close button icon with mouse over when window is active (Windows only)
 
 sideBarTextFg: grey; // filters side bar text
-sideBarBg: blackish; // filters side bar background
+sideBarBg: cream; // filters side bar background
 sideBarBgRipple: windowBgRipple; // filters side bar ripple effect
 sideBarIconFg: menuIconFg; // filters side bar icon
 sideBarBadgeBg: red; // filters side bar badge background
