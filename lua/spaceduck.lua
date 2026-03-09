@@ -33,6 +33,7 @@ function M.load()
   ---@type spaceduck.palette
   local palette = is_dark and spaceduck.dark.palette or spaceduck.light.palette
 
+  -- highlight groups
   local base = is_dark and higroups().dark(palette) or higroups().light(palette)
   local groups = utils().merge_groups(higroups().common(palette), higroups().plugins(palette), base)
 

@@ -155,9 +155,9 @@ function M.setup(c)
 
     status = {
       StatusLine = {
-        fg = c.cream.hex,
+        fg = c.blackish.hex,
         ctermfg = c.cream.cterm,
-        bg = c.blackish.hex,
+        bg = c.cream.hex,
         ctermbg = c.blackish.cterm,
         reverse = true,
       },
@@ -201,6 +201,8 @@ function M.setup(c)
         bg = c.blackish.hex,
         ctermbg = c.blackish.cterm,
       },
+      WinBar = { fg = c.grey.hex, bg = c.blackish.hex },
+      WinBarNC = { link = "Muted" },
     },
 
     visual = {
@@ -253,7 +255,7 @@ function M.setup(c)
       Tag = { fg = c.light_purple.hex, ctermfg = c.light_purple.cterm },
       Debug = { fg = c.light_purple.hex, ctermfg = c.light_purple.cterm },
       StorageClass = { fg = c.light_purple.hex, ctermfg = c.light_purple.cterm },
-      String = { fg = c.cyan.hex, ctermfg = c.cyan.cterm },
+      String = { fg = c.cyan.hex, ctermfg = c.cyan.cterm, italic = true },
       Structure = { fg = c.cyan.hex, ctermfg = c.cyan.cterm },
       Typedef = { fg = c.cyan.hex, ctermfg = c.cyan.cterm },
       Function = { fg = c.green.hex, ctermfg = c.green.cterm },

@@ -44,18 +44,21 @@ function M.setup(c)
       YellowItalic          = { fg = c.yellow.hex,  italic = true },
       YellowBold            = { fg = c.yellow.hex,  bold = true   },
 
-      BlueItalic            = { fg = c.purple.hex,  italic = true },
-      BlueBold              = { fg = c.purple.hex,  bold = true   },
-
       MagentaItalic         = { fg = c.magenta.hex, italic = true },
       MagentaBold           = { fg = c.magenta.hex, bold = true   },
+
       PurpleItalic          = { fg = c.purple.hex,  italic = true },
+      PurpleBold            = { fg = c.purple.hex,  bold = true   },
 
       GreenItalic           = { fg = c.green.hex,   italic = true },
       GreenBold             = { fg = c.green.hex,   bold = true   },
 
       OrangeItalic          = { fg = c.orange.hex,  italic = true },
+      OrangeBold            = { fg = c.orange.hex,  bold = true   },
+
       CyanItalic            = { fg = c.cyan.hex,    italic = true },
+      CyanBold              = { fg = c.cyan.hex,    bold = true   },
+
       Muted                 = is_dark and { fg = hi().darken(c.cream.hex, 0.18, c.blackish.hex) } or { link = "Comment" },
     },
     buttons = {
@@ -92,9 +95,9 @@ function M.setup(c)
       NormalFloat           = { bg = c.blackish.hex    },
     },
     diff = {
-      Added                 = { fg = c.green.hex,  bg = vim.o.diff and hi().darken(c.green.hex, 0.05, c.blackish.hex) or nil},
+      Added                 = { fg = c.green.hex,  bg = vim.o.diff and hi().darken(c.green.hex, 0.05, c.blackish.hex) or nil  },
       Changed               = { fg = c.purple.hex, bg = vim.o.diff and hi().darken(c.purple.hex, 0.05, c.blackish.hex) or nil },
-      Removed               = { fg = c.red.hex,    bg = vim.o.diff and hi().darken(c.red.hex, 0.05, c.blackish.hex) or nil  },
+      Removed               = { fg = c.red.hex,    bg = vim.o.diff and hi().darken(c.red.hex, 0.05, c.blackish.hex) or nil    },
       diffAdded             = { fg = c.green.hex,  bg = hi().darken(c.green.hex, 0.05, c.blackish.hex)                      },
       DiffAdd               = { fg = c.green.hex,  bg = hi().darken(c.green.hex, 0.05, c.blackish.hex)                      },
       DiffChange            = { fg = c.purple.hex, bg = hi().darken(c.purple.hex, 0.05, c.blackish.hex)                     },
@@ -104,18 +107,23 @@ function M.setup(c)
       diffLine              = { link = "DiffRemoved"},
     },
     signs = {
-      RedSign               = { link = "Red"                },
-      YellowSign            = { link = "Yellow"             },
-      BlueSign              = { link = "LightPurple"        },
-      PurpleSign            = { link = "Purple"             },
-      GreenSign             = { link = "Green"              },
+      RedSign               = { link = "Red"            },
+      YellowSign            = { link = "Yellow"         },
+      BlueSign              = { link = "LightPurple"    },
+      PurpleSign            = { link = "Purple"         },
+      GreenSign             = { link = "Green"          },
     },
     ["lsp.diagnostics"] = {
-      DiagnosticError       = { link = "Red"          },
-      DiagnosticWarn        = { link = "Yellow"       },
-      DiagnosticInfo        = { link = "LightPurple"  },
-      DiagnosticHint        = { link = "Purple"       },
-      DiagnosticOk          = { link = "Cyan"         },
+      DiagnosticError       = { link = "Red"            },
+      DiagnosticWarn        = { link = "Yellow"         },
+      DiagnosticInfo        = { link = "LightPurple"    },
+      DiagnosticHint        = { link = "Purple"         },
+      DiagnosticOk          = { link = "Cyan"           },
+      -- message
+      ErrorMsg              = { link = "DiagnosticError"},
+      WarningMsg            = { link = "DiagnosticWarn" },
+      InfoMsg               = { link = "DiagnosticInfo" },
+      HintMsg               = { link = "DiagnosticHint" },
       -- underline
       DiagnosticUnderlineError  = { sp = c.red.hex,        undercurl = true },
       DiagnosticUnderlineWarn   = { sp = c.yellow.hex,     undercurl = true },
@@ -130,7 +138,7 @@ function M.setup(c)
       DiagnosticSignError       = { link = "RedSign"    },
       DiagnosticSignWarn        = { link = "YellowSign" },
       DiagnosticSignInfo        = { link = "BlueSign"   },
-      DiagnosticSignHint        = { link = "BrightBlue" },
+      DiagnosticSignHint        = { link = "Cyan"       },
       DiagnosticSignOk          = { link = "GreenSign"  },
       -- lsp floating
       LspDiagnosticsFloatingError         = { link = "DiagnosticFloatingError"  },
@@ -183,7 +191,7 @@ function M.setup(c)
       ["@lsp.type.variable"]              = { link = "@variable"          },
       ["@lsp.type.parameter"]             = { link = "@variable.parameter"},
       ["@lsp.type.namespace"]             = { link = "@module"            },
-      ["@lsp.typemod.variable.readonly"]  = { link = "BrightMagenta"      },
+      ["@lsp.typemod.variable.readonly"]  = { link = "Magenta"            },
       ["@lsp.type.class"]                 = { link = "Yellow"             },
       ["@lsp.type.boolean"]               = { link = "@boolean"           },
       ["@lsp.type.builtinType"]           = { link = "@type.builtin"      },
@@ -197,9 +205,13 @@ function M.setup(c)
       ["@lsp.type.selfTypeKeyword"]       = { link = "@variable.builtin"  },
       ["@lsp.type.string"]                = { link = "@string"            },
       ["@lsp.type.typeAlias"]             = { link = "@type.definition"   },
+      ["@lsp.type.operator"]              = { link = "Operator"           },
+      ["@lsp.typemod.variable.definition"]= { link = "Purple"             },
+      ["@lsp.typemod.type.definition"]    = { link = "Type"               },
       ["@lsp.type.unresolvedReference"]   = { fg = c.red.hex, undercurl = true    },
       ["@lsp.typemod.class.defaultLibrary"]       = { link = "@type.builtin"      },
       ["@lsp.typemod.enum.defaultLibrary"]        = { link = "@type.builtin"      },
+      ["@lsp.type.enumMember"]                    = { link = "LightPurple" },
       ["@lsp.typemod.enumMember.defaultLibrary"]  = { link = "@constant.builtin"  },
       ["@lsp.typemod.function.defaultLibrary"]    = { link = "@function.builtin"  },
       ["@lsp.typemod.keyword.async"]              = { link = "@keyword.coroutine" },
