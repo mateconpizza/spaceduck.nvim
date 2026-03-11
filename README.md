@@ -1,66 +1,57 @@
 <div align="center">
-	<h1>Spaceduck theme for Nvim</h1>
-	<strong>Spaceduck for neovim. All Lua, all spaceduck, always intergalactic.</strong>
+  <a href="./assets/banner.png" target="_blank">
+    <img src="./assets/banner.png"
+         alt="Spaceduck Logo of duck in an astronaut uniform holding computer: credit to Lexi @kalrita_lw"
+         style="max-width:90%; height:auto;">
+  </a>
 </div>
 
-<hr>
+<div align="center">
+  <a href="./assets/screenshot-dark.png" target="_blank">
+    <img src="./assets/screenshot-dark.png" alt="Dark Mode Screenshot" style="max-width:45%; height:auto; margin:5px;">
+  </a>
+  <a href="./assets/screenshot-light.png" target="_blank">
+    <img src="./assets/screenshot-light.png" alt="Light Mode Screenshot" style="max-width:45%; height:auto; margin:5px;">
+  </a>
+</div>
 
-<center>
-  <img  src="https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/banner.png?raw=true" alt="Spaceduck Logo of duck in an astronaut uniform holding computer: credit to Lexi @kalrita_lw">
-</center>
+<div align="center">
+  <h1><span style="font-size: 1.2em">🦆</span> spaceduck.nvim</h1>
+</div>
 
-<center>
-  <img  src="https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/screenshot.png?raw=true" alt="Screenshot of terminal with vim spaceduck theme installed">
-</center>
+<p align="center">
+  <strong>~ Spaceduck, always intergalactic ~</strong>
+</p>
 
 > [!NOTE]
 > Forked from [spaceduck-theme](https://github.com/spaceduck-theme/nvim), this version expands on the original with a `light` theme (WIP) and extra configurations for my personal toolkit.
 
-This is Nvim spaceduck theme port written in Lua.
-
-# Inspiration 💭
-
-This theme was inspired from my incessant desire to feel like I'm in space when I stare at a computer.
-"Spaceduck" takes its name from my love of [duck dodgers](https://m.media-amazon.com/images/M/MV5BNDY2YjgyZGMtMWY2Zi00ZmQ5LTg0YjgtNjYyMGNkMTMzNWU1XkEyXkFqcGdeQXVyMzM4NjcxOTc@._V1_.jpg) as a kid.
-
-# Current Language Support
-
-Basically languages I looked at with my eyes to make sure they didn't look like poop.
-
-**Languages:**
-
-_Note: if something looks off please submit an issue with a screenshot_
-
-- C, C++, fortran, haskell, html, java, javascript, markdown, php, python, ruby, sql, LaTeX, typescript
-
 # Installation
 
-## [packer.nvim](https://github.com/wbthomason/packer.nvim)
+<details>
+<summary>With <a href="https://github.com/folke/lazy.nvim">folke/lazy.nvim</a></summary>
+
+```lua
+{
+    "https://codeberg.org/mateconpizza/spaceduck.nvim",
+    config = function()
+      vim.o.background = 'light' -- or 'dark'
+      vim.cmd.colorscheme('spaceduck')
+    end,
+    enabled = true,
+}
+```
+
+</details>
+
+<details>
+<summary>With <a href="https://github.com/wbthomason/packer.nvim">packer.nvim</a></summary>
 
 ```lua
 use({ "spaceduck-theme/nvim", as = "spaceduck" })
 ```
 
-We use semver on spaceduck so you can refer to a specific tag if you want instead of the `master` branch.
-
-# Plugins support
-
-## [Lualine](https://github.com/hoob3rt/lualine.nvim)
-
-<center>
-  <img  src="https://user-images.githubusercontent.com/32819563/111934957-16f0d780-8a88-11eb-9f33-f02c9ba364c1.png" alt="lualine normal mode screenshot">
-  <img  src="https://user-images.githubusercontent.com/32819563/111934981-21ab6c80-8a88-11eb-8118-dfbc2dc3bddf.png" alt="lualine insert mode screenshot">
-  <img  src="https://user-images.githubusercontent.com/32819563/111935019-325be280-8a88-11eb-9846-a2d7bfec226c.png" alt="lualine visual mode screenshot">
-  <img  src="https://user-images.githubusercontent.com/32819563/111935037-3ab41d80-8a88-11eb-8797-2b6db14cbff8.png" alt="lualine replace mode screenshot">
-</center>
-
-```lua
-require("lualine").setup({
-  options = {
-    theme = "spaceduck",
-  },
-})
-```
+</details>
 
 # Extras
 
@@ -81,12 +72,31 @@ require("lualine").setup({
 
 </details>
 
-# Contributing
+# Author's Inspiration
 
-We welcome all contributions. Before you contribute you should be aware of some tooling we have in place to help us maintaining this project.
+This theme was inspired from my incessant desire to feel like I'm in space when I stare at a computer.
+"Spaceduck" takes its name from my love of [duck dodgers](https://m.media-amazon.com/images/M/MV5BNDY2YjgyZGMtMWY2Zi00ZmQ5LTg0YjgtNjYyMGNkMTMzNWU1XkEyXkFqcGdeQXVyMzM4NjcxOTc@._V1_.jpg) as a kid.
 
-We use [`gitmoji`](https://gitmoji.dev/) and [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) to respectively give meaning to our commits and automatically version the project based on these commits. `gitmoji` has a lot of different emojis you can use to give meaning to your commits. We recommend you check the link given to familiarize yourself with it. They provide a [quizz website](https://gitmemoji.lalilo.com/) to learn it.
+- Thank you [Guillermo Rodriguez](https://github.com/pineapplegiant/spaceduck)
 
-To assist you in writing your commits when you develop on this project, we recommend you to use [gitmoji-cli](https://github.com/carloscuesta/gitmoji-cli).
+# Plugins support
 
-To inspect the highlight groups used for a specific portion of text, you can use the built-in command `:Inspect` provided by NeoVim.
+<details>
+<summary>With <a href="https://github.com/hoob3rt/lualine.nvim">Lualine</a></summary>
+
+<center>
+  <img  src="https://user-images.githubusercontent.com/32819563/111934957-16f0d780-8a88-11eb-9f33-f02c9ba364c1.png" alt="lualine normal mode screenshot">
+  <img  src="https://user-images.githubusercontent.com/32819563/111934981-21ab6c80-8a88-11eb-8118-dfbc2dc3bddf.png" alt="lualine insert mode screenshot">
+  <img  src="https://user-images.githubusercontent.com/32819563/111935019-325be280-8a88-11eb-9846-a2d7bfec226c.png" alt="lualine visual mode screenshot">
+  <img  src="https://user-images.githubusercontent.com/32819563/111935037-3ab41d80-8a88-11eb-8797-2b6db14cbff8.png" alt="lualine replace mode screenshot">
+</center>
+
+```lua
+require("lualine").setup({
+  options = {
+    theme = "spaceduck",
+  },
+})
+```
+
+</details>
