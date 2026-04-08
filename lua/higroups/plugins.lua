@@ -3,6 +3,8 @@ local M = {}
 ---@param c spaceduck.palette
 ---@return table<string, palette.HighlightAttrs>
 function M.setup(c)
+  local is_dark = vim.o.background == "dark"
+
   return {
     -- stylua: ignore start
     ["nvim-treesitter/nvim-treesitter"] = {
@@ -76,6 +78,13 @@ function M.setup(c)
       GitSignsDeleteInline              = { reverse = true },
       GitSignsAddInline                 = { reverse = true },
       GitSignsChangeInline              = { reverse = true },
+    },
+
+    ["https://codeberg.org/andyg/leap.nvim"] = {
+      LeapBackdrop                      = { link = 'Comment'    },
+      LeapLabel                         = { link = 'Orange'     },
+      LeapMatch                         = is_dark and { fg = c.green.hex, bold = true } or { fg = c.green.hex, bold = true, underline = true },
+      LeapLabelDimmed                   = { link = 'LeapMatch'  },
     },
     -- stylua: ignore end
   }
